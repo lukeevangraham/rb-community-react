@@ -1,4 +1,5 @@
 import React from "react";
+import { Parallax, Background } from 'react-parallax';
 import "../styles/main_styles.css";
 import "../styles/responsive.css";
 
