@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/main_styles.css";
+import "../styles/responsive.css";
 
 // By importing the Header.css file, it is added to the DOM whenever this component loads
 
@@ -9,26 +10,23 @@ import "../styles/main_styles.css";
 // Non quoted values default to "pixels", e.g. height, margin, padding
 
 const styles = {
-  top_bar_background: {
-    backgroundImage: 'url(/images/top_bar.jpg)'
-  },
-  headingStyle: {
-    fontSize: 100
-  }
+    top_bar_background: {
+        backgroundImage: 'url(/images/top_bar.jpg)'
+    }
 };
 
 // We use JSX curly braces to evaluate the style object
 
 function Header() {
-  return (
-    /* <header className="header">
-      <h1 style={styles.headingStyle}>Welcome</h1>
-    </header> */
+    return (
+        /* <header className="header">
+          <h1 style={styles.headingStyle}>Welcome</h1>
+        </header> */
 
 
 
-    <header className="header">
-			
+        <header className="header">
+
             {/* Top Bar */}
             <div className="top_bar">
                 <div className="top_bar_background" style={styles.top_bar_background}></div>
@@ -58,9 +56,9 @@ function Header() {
                             </div>
                         </div>
                     </div>
-                </div>				
+                </div>
             </div>
-    
+
             {/* Header Content */}
             <div className="header_container">
                 <div className="container">
@@ -69,7 +67,7 @@ function Header() {
                             <div className="header_content d-flex flex-row align-items-center justify-content-start">
                                 <div className="logo_container">
                                     <a href="#">
-                                        <div className="logo"><img src="/images/logo.png" alt=""/></div>
+                                        <div className="logo"><img src="/images/logo.png" alt="" /></div>
                                         <div className="logo_text">RB Community</div>
                                     </a>
                                 </div>
@@ -84,19 +82,19 @@ function Header() {
                                     </ul>
                                     {/* <div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div> */}
                                 </nav>
-    
+
                                 {/* Hamburger */}
-    
+
                                 <div className="hamburger ml-auto">
                                     <i className="fa fa-bars" aria-hidden="true"></i>
                                 </div>
-    
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    
+
             {/* Header Search Panel */}
             <div className="header_search_container">
                 <div className="container">
@@ -112,10 +110,10 @@ function Header() {
                             </div>
                         </div>
                     </div>
-                </div>			
-            </div>			
+                </div>
+            </div>
         </header>
-  );
+    );
 }
 
 export default Header;
